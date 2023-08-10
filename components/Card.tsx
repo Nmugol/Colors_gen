@@ -23,11 +23,17 @@ export default function Card() {
 
             </div>
             
-            <div>
-                <p>R <input typr={"range"} min={"0"} max={"255"} value={red} step={"1"}> </input></p>
-                <p>G <input typr={"range"} min={"0"} max={"255"} value={green} step={"1"}></input></p>
-                <p>B <input typr={"range"} min={"0"} max={"255"} value={blue} step={"1"}></input></p>
-                <p>HEX {hex.toUpperCase()}</p>
+            <div className="sliders">
+                <label>R</label>
+                <input type={"range"} min={"0"} max={"255"} value={red} step="1"></input>
+
+                <label>G</label>
+                <input type={"range"} min={"0"} max={"255"} value={green} step={"1"}></input>
+
+                <label>B</label>
+                <input type={"range"} min={"0"} max={"255"} value={blue} step={"1"}></input>
+
+                <p>HEX {hex}</p>
             </div>
             <div>
                 przyciski do kontroli 

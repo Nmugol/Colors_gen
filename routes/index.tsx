@@ -1,4 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
+import { useSignal } from "@preact/signals";
+import Counter from "../islands/Counter.tsx";
+
 import Header from "../components/Header.tsx"
 import Card from "../components/Card.tsx";
 
